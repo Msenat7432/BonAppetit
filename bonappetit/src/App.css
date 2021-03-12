@@ -1,0 +1,39 @@
+.App {
+  text-align: left;
+ 
+
+}
+
+nav {
+  text-align:right;
+  background: orange;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.cat{
+    font-family: monospace;
+   background: orange;
+   color: white;
+    border-radius: 5px;
+   text-decoration: none;
+}
+
+.bon{
+    font-family: monospace;
+   background: orange;
+   color: white;
+    border-radius: 5px;
+   text-decoration: none;
+}
+
+
+
+
+main {
+  width: 900px;
+  margin: auto;
+  height: 100%;
+}
