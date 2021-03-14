@@ -1,8 +1,14 @@
-.recipe h1 {
-  font-size: 24px;
+.recipe  {
+    font-family: monospace;
+  font-size: 15px;
+  text-decoration: none;
+
 }
 
-.recipe a {
-  font-weight: bold;
-  color: green;
+img {
+  max-height: 100px;
+  padding: 5px;
+  /* margin: 5px 20px 5px 0; */
+  display: inline-block;
+  vertical-align: middle;
 }

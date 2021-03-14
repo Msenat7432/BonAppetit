@@ -12,13 +12,8 @@ function App() {
   return (
 		<div className='App'>
 			<nav>
-				<Link to='/home' className="bon">
-					<img src='' alt='' />
-					<h1>Bon Appetit</h1>
-				</Link>
-				<Link className ="cat" to='/main'>
-					<h2>Categories</h2>
-				</Link>
+		     <Link to='/home' className='bon'> <h1>Bon Appetit</h1></Link>
+			 <Link className='cat' to='/main'> <h2>Categories</h2></Link>
 			</nav>
 			<main>
 				<Route path='/' exact component={Home} />

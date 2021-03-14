@@ -12,6 +12,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  
 }
 .cat{
     font-family: monospace;
@@ -32,8 +33,4 @@ nav {
 
 
 
-main {
-  width: 900px;
-  margin: auto;
-  height: 100%;
-}
+

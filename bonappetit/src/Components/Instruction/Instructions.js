@@ -18,6 +18,7 @@ const Instructions = ({match}) => {
     return (
         <div>
            {instructions ? <h1>{instructions}</h1> : null}
+		   {meal.strIngredient1}
 
         </div>
     );

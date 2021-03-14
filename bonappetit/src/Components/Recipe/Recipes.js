@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import './Recipe.css';
 
 
 const Recipes = (props) => {
     // console.log(props.match.params.category)
+
+
+    
     const [recipes, setRecipes] = useState([])
     useEffect(() => {
     const url =`https://www.themealdb.com/api/json/v1/1/filter.php?c=${props.match.params.category}`
@@ -23,9 +27,9 @@ const Recipes = (props) => {
         <div>
          {recipes.map((recipe) => {
              return (
-								<div className="recipe">
+								<div >
 									{' '}
-									<Link to={`/category/${recipe.strMeal}`} key={recipe.srtMeal}>
+									<Link className ="recipe" to={`/category/${recipe.strMeal}`} key={recipe.srtMeal}>
 										<img src={recipe.strMealThumb} alt='' />
 										<p>{recipe.strMeal}</p>
 									</Link>
