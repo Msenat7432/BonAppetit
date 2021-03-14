@@ -21,7 +21,7 @@ function App() {
 				<Route path='/recipes/:category' component={Recipes} />
 				<Route
 					path='/category/:instruction'
-					render={(routerProps) => <Instructions match={routerProps.match} />}
+					render={(routerProps) => <Instructions  match={routerProps.match}   />}
 				/>
 			</main>
 		</div>
