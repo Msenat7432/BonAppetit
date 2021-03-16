@@ -12,16 +12,22 @@ function App() {
   return (
 		<div className='App'>
 			<nav>
-		     <Link to='/home' className='bon'> <h1>Bon Appetit</h1></Link>
-			 <Link className='cat' to='/main'> <h2>Categories</h2></Link>
+				<Link to='/home' className='bon'>
+					{' '}
+					<h1>Bon Appetit</h1>
+				</Link>
+				<Link className='cat' to='/main'>
+					{' '}
+					<h2>Categories</h2>
+				</Link>
 			</nav>
 			<main>
-				<Route path='/' exact component={Home} />
-				<Route path='/main' component={Main} />
+				
+			    <Home />	<Route path='/main' component={Main} />
 				<Route path='/recipes/:category' component={Recipes} />
 				<Route
 					path='/category/:instruction'
-					render={(routerProps) => <Instructions  match={routerProps.match}   />}
+					render={(routerProps) => <Instructions match={routerProps.match} />}
 				/>
 			</main>
 		</div>

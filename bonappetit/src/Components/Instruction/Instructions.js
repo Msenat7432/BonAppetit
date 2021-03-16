@@ -16,10 +16,10 @@ const Instructions = ({match}) => {
 					.catch(console.error);
 			}, []);
     return (
-        <div>
+        <div className= " instructions">
            {instructions ? <h1>{instructions}</h1> : null}
 		   {meal.strIngredient1}
-
+           
         </div>
     );
 };

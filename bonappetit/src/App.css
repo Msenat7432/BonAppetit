@@ -1,12 +1,11 @@
 .App {
-  text-align: left;
- 
-
+ background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+ text-align: left;
 }
 
 nav {
   text-align:right;
-  background: orange;
+  background: #ff9d5c;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -16,7 +15,7 @@ nav {
 }
 .cat{
     font-family: monospace;
-   background: orange;
+   background: #ff9d5c;;
    color: white;
     border-radius: 5px;
    text-decoration: none;
@@ -24,13 +23,66 @@ nav {
 
 .bon{
     font-family: monospace;
-   background: orange;
+   background: #ff9d5c;
    color: white;
     border-radius: 5px;
    text-decoration: none;
 }
 
+.instructions {
+    font-family: monospace;
+    color: white;
+  
+}
 
 
+.main {
+  transition: all 0.3s ease-in-out;
+  display:inline-block;
+  width:90px;
+  height:40px;
+  line-height:40px;
+  border:2px solid white;
+  text-transform: capitalize;
+  border-radius:2px;
+  margin:5px;
+  position:relative;
+  overflow:hidden;   
+}
 
+.main:after {
+    transition: all 0.3s ease-in-out;  
+    content: "";
+    display: block;
+    background-color:white;
+    margin-top:0px;
+    height: 40px;
+}
 
+.main:hover:after{
+    margin-top:-40px;
+}
+.main:hover{
+    color:#ff9d5c;;
+}
+
+.recipe{
+  transition: all 0.3s ease-in-out;
+  width:20px;
+  height:10px;
+  line-height:30px;
+  text-transform: capitalize;
+  border-radius:2px;
+  margin:5px;
+  position:relative;
+  color: white;
+  text-align: right;
+}
+
+.recipe:hover{
+    color:#ff9d5c;;
+}
+
+.img1{
+  text-align: center;
+}

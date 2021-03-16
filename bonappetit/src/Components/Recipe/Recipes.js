@@ -30,7 +30,7 @@ const Recipes = (props) => {
 								<div >
 									{' '}
 									<Link className ="recipe" to={`/category/${recipe.strMeal}`} key={recipe.srtMeal}>
-										<img src={recipe.strMealThumb} alt='' />
+										<img className ="img1" src={recipe.strMealThumb} alt='' />
 										<p>{recipe.strMeal}</p>
 									</Link>
 								</div>

@@ -4,8 +4,8 @@ import React from 'react';
 
 const Home = () => {
     return (
-			<div>
-				<img src='' alt='' />
+			<div className='home'>
+		     <img src ="/src/foodapp.jpeg" alt =""/>
 			</div>
 		);
 };

@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react';
 import { Link } from 'react-router-dom';
-import './Main.css';
+// import './Main.css';
 
 const Main = (prop) => {
     
@@ -20,13 +20,10 @@ const Main = (prop) => {
 				<div>
 					{meals.map((meal) =>{
     return (
-			<div className="meal">
-				<Link
-					className='main'
-					to={`/recipes/${meal.strCategory}`}
-					key={meal.strCategory}>
-					{/* <img src={meal.strCategoryThumb} /> */}
-					<button>{meal.strCategory}</button>
+			<div className='meal'>
+				<Link to={`/recipes/${meal.strCategory}`} key={meal.strCategory}>
+					<img src={meal.strCategoryThumb} />
+					<button className='main'>{meal.strCategory}</button>
 				</Link>
 			</div>
 		);
