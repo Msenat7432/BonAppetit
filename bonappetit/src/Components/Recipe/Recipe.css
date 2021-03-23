@@ -1,0 +1,15 @@
+.recipe  {
+    font-family: monospace;
+  font-size: 30px;
+  text-decoration: none;
+  padding-bottom: 40px;
+}
+
+img {
+  max-height: 150px;
+  padding-top: 50px;
+  /* margin: 5px 20px 5px 0; */
+  display: inline-block;
+  vertical-align: middle;
+  align-items: center;
+}
